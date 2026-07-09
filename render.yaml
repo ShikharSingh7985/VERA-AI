@@ -9,7 +9,7 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: GEMINI_MODEL
-        value: gemini-2.5-flash
+        value: gemini-3.1-flash-lite
       - key: USE_LLM
         value: true
 
