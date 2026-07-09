@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.env
+*.log
+logs/
+dist/
+veravenv/
+venv/
+.venv/
+*.zip
+expanded/
+PRE GIVEN FILES/
+
