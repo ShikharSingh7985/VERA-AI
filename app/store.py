@@ -73,8 +73,11 @@ class InMemoryStore:
         with self._lock:
             bucket = self.contexts.setdefault(scope, {})
             current = bucket.get(context_id)
-            if current and current.version >= version:
-                return False, current
+            if current:
+                if current.version > version:
+                    return False, current
+                if current.version == version:
+                    return True, current
             record = ContextRecord(
                 scope=scope,
                 context_id=context_id,
